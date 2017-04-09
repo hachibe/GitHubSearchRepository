@@ -108,6 +108,7 @@
 				8CA0DDCB1E69AEE200ACE628 /* Sources */,
 				8CA0DDCC1E69AEE200ACE628 /* Frameworks */,
 				8CA0DDCD1E69AEE200ACE628 /* CopyFiles */,
+				8C327B371E9A5DA2008550F8 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -150,6 +151,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C327B371E9A5DA2008550F8 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CA0DDCB1E69AEE200ACE628 /* Sources */ = {
@@ -298,6 +316,7 @@
 				8CA0DDD81E69AEE300ACE628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

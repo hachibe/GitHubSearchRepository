@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Masanori. All rights reserved.
 //
 
-enum GitHubClientError : Error {
+enum GitHubClientError: Error {
     // 通信に失敗
     case connectionError(Error)
     

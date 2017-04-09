@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Masanori. All rights reserved.
 //
 
-enum HTTPMethod : String {
+enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"
 }

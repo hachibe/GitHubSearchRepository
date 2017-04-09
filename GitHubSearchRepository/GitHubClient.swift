@@ -15,12 +15,11 @@ class GitHubClient {
         return session
     }()
     
-    func send<Request : GitHubRequest>(
+    func send<Request: GitHubRequest>(
         request: Request,
         completion: @escaping (Result<Request.Response, GitHubClientError>) -> Void) {
         let urlRequest = request.buildURLRequest()
-        let task = session.dataTask(with: urlRequest) {
-            data, response, error in
+        let task = session.dataTask(with: urlRequest) { data, response, error in
             
             switch (data, response, error) {
             case (_, _, let error?):
