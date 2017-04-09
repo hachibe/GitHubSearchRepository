@@ -126,7 +126,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Masanori Tsubouchi";
+				ORGANIZATIONNAME = "Masanori";
 				TargetAttributes = {
 					8CA0DDCE1E69AEE200ACE628 = {
 						CreatedOnToolsVersion = 8.2.1;
